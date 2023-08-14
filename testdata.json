@@ -1,0 +1,35 @@
+{
+  "endpoint": "/objects",
+  "scenarios": {
+    "singleItem": {
+      "parameters": "/7"
+    },
+    "multipleItems": {
+      "parameters": "?id=3&id=5&id=10"
+    },
+    "addItem": {
+      "body": {
+        "name": "Test Product",
+        "data": {
+          "year": 2023,
+          "price": 420.69,
+          "CPU model": "Intel Core i9",
+          "Hard disk size": "1 TB"
+        }
+      }
+    },
+    "updateItem": {
+      "body": {
+        "name": "Test Product",
+        "data": {
+          "year": 2023,
+          "price": 420.69,
+          "CPU model": "Intel Core i9",
+          "Hard disk size": "1 TB",
+          "Color": "Cyan"
+        }
+      }
+    },
+    "deleteItem": {}
+  }
+}
